@@ -2,14 +2,13 @@ from flask import Flask
 from flask import render_template
 from flask import request
 from threading import Thread
+from manual import posicao_inicial, move_cima, move_direita, move_esquerda, move_baixo
 
 app = Flask(__name__)
 
-#@app.before_first_request
-#def _run_on_start():
-    #setup_motor()
-    #t = Thread(target=roda_medicao)
-    #t.start()
+@app.before_first_request
+def _run_on_start():
+    posicao_inicial()
 
 @app.route('/',methods=['GET'])
 def form():
@@ -19,9 +18,9 @@ def form():
 def submit():
     comando=request.form['comando']
     if(comando == 'w'):
-        move_frente()
+        move_acima()
     if(comando == 's'):
-        move_tras()
+        move_baixo()
     if(comando == 'a'):
         move_esquerda()
     if(comando == 'd'):
