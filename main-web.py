@@ -2,8 +2,8 @@ from flask import Flask
 from flask import render_template
 from flask import request
 from threading import Thread
-from manual import posicao_inicial, move_cima, move_direita, move_esquerda, move_baixo
-from automatico import auto
+#from manual import posicao_inicial, move_cima, move_direita, move_esquerda, move_baixo
+from automatico import posicao_inicial, auto
 
 app = Flask(__name__)
 
