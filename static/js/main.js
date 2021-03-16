@@ -32,9 +32,9 @@ $(function(){
             // Teclou D
             enviaPostAjax("d");
         }
-        else if(event.key == "q"){
-            // Teclou q
-            enviaPostAjax("q");
+        else if(event.key == "g"){
+            // Teclou g
+            enviaPostAjax("g");
         }
     });
 

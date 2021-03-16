@@ -26,7 +26,7 @@ def submit():
         move_esquerda()
     if(comando == 'd'):
         move_direita()
-    if(comando == 'q'):
+    if(comando == 'g'):
         print('\n Modo automatico')
         posicao_inicial()
         auto()
