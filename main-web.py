@@ -5,11 +5,11 @@ from threading import Thread
 
 app = Flask(__name__)
 
-@app.before_first_request
-def _run_on_start():
-    setup_motor()
-    t = Thread(target=roda_medicao)
-    t.start()
+#@app.before_first_request
+#def _run_on_start():
+    #setup_motor()
+    #t = Thread(target=roda_medicao)
+    #t.start()
 
 @app.route('/',methods=['GET'])
 def form():
@@ -33,4 +33,4 @@ def submit():
 
 #export FLASK_DEBUG=1
 if __name__ == "__main__":
-    app.run(host='0.0.0.0') 
+    app.run(host='0.0.0.0', port='5001') 
