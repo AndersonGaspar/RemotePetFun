@@ -18,7 +18,7 @@ def posicao_inicial():
     servo2.angle = 60
     
 # alterar aqui depois para 10 minutos
-fim = time.time()+10
+fim = time.time()+30
 def auto():
     try:
         while True:
