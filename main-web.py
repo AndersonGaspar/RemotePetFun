@@ -18,7 +18,7 @@ def form():
 def submit():
     comando=request.form['comando']
     if(comando == 'w'):
-        move_acima()
+        move_cima()
     if(comando == 's'):
         move_baixo()
     if(comando == 'a'):
@@ -28,7 +28,6 @@ def submit():
     if(comando == 'q'):
         move_parar()
     return ('',204) 
-
 
 #export FLASK_DEBUG=1
 if __name__ == "__main__":

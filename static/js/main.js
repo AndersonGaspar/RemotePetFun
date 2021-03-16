@@ -38,12 +38,4 @@ $(function(){
         }
     });
 
-    //enviando a cada 2s uma requisicao para pegar o valor da distancia 
-    setInterval(function(){
-        $.get("/distancia",function(resposta){
-            $("#distancia").text(resposta);
-        })
-    }, 2000);//2s
-
-
 });
