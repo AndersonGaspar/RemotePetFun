@@ -3,6 +3,7 @@ from flask import render_template
 from flask import request
 from threading import Thread
 from manual import posicao_inicial, move_cima, move_direita, move_esquerda, move_baixo
+from automatico import auto
 
 app = Flask(__name__)
 
@@ -26,7 +27,9 @@ def submit():
     if(comando == 'd'):
         move_direita()
     if(comando == 'q'):
-        move_parar()
+        print('\n Modo automatico')
+        posicao_inicial()
+        auto()
     return ('',204) 
 
 #export FLASK_DEBUG=1
