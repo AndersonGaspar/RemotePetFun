@@ -14,8 +14,9 @@ def set_motors(self, motorx, motory):
     MOTOR_X = motorx
     MOTOR_Y = motory
 
-servo2 = AngularServo(MOTOR_Y, min_angle=-45, max_angle=90)
-servo1 = AngularServo(MOTOR_X, min_angle=-90, max_angle=90)
+servo2 = AngularServo(set_motors.MOTOR_Y, min_angle=-45, max_angle=90)
+servo1 = AngularServo(set_motors.MOTOR_X, min_angle=-180, max_angle=180)
+
 
 def posicao_inicial():
     servo1.angle = 0
