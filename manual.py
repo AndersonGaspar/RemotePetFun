@@ -58,6 +58,7 @@ def le_tecla():
          print('Digite s para movimentar para baixo')
          print('Digite a para movimentar para esquerda')
          print('Digite d para movimentar para direita')
+         print('Digite r para retornar ao menu anterior')
          tecla_comando = getch.getch()
          if tecla_comando == 'w':
              move_cima()
@@ -67,6 +68,8 @@ def le_tecla():
              move_esquerda()
          if tecla_comando == 'd':
              move_direita()
+         if tecla_comando == 'r':
+             break
 
 #posicao_inicial()
 #le_tecla()
