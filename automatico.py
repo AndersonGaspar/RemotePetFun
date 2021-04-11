@@ -5,17 +5,14 @@ from gpiozero import AngularServo
 from time import sleep
 import time
 
-# #MOTOR_Y = 11
-# MOTOR_Y = 17
-# #MOTOR_X = 13
-# MOTOR_X = 27
+#MOTOR_Y = 11
+MOTOR_Y = 17
+#MOTOR_X = 13
+MOTOR_X = 27
 
-def set_motors(self, motorx, motory):
-    MOTOR_X = motorx
-    MOTOR_Y = motory
 
-servo2 = AngularServo(set_motors.MOTOR_Y, min_angle=-45, max_angle=90)
-servo1 = AngularServo(set_motors.MOTOR_X, min_angle=-180, max_angle=180)
+servo2 = AngularServo(MOTOR_Y, min_angle=-45, max_angle=90)
+servo1 = AngularServo(MOTOR_X, min_angle=-180, max_angle=180)
 
 
 def posicao_inicial():
