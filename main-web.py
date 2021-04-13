@@ -30,6 +30,9 @@ def submit():
         print('\n Modo automatico')
         posicao_inicial()
         auto()
+    if(comando == 'h'):
+        print('\n Posicao inicial')
+        posicao_inicial()
     return ('',204) 
 
 #export FLASK_DEBUG=1
