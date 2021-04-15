@@ -1,8 +1,6 @@
 from flask import Flask
 from flask import render_template
 from flask import request
-#from manual import posicao_inicial, move_cima, move_direita, move_esquerda, move_baixo
-#from automatico import posicao_inicial, auto
 from controle import posicao_inicial, move_cima, move_direita, move_esquerda, move_baixo, auto
 
 app = Flask(__name__)
